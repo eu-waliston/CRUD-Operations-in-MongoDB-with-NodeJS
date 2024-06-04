@@ -1,11 +1,12 @@
 import React from "react";
+import AllRoutes from "./Routes/AllRoutes";
 
 const App = () => {
   return (
     <div>
-      <h1>HOME</h1>
+      <AllRoutes />
     </div>
-  )
-}
+  );
+};
 
 export default App;
