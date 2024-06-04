@@ -6,10 +6,7 @@ const Home = () => {
     return (
         <div className="home--page">
             <div className="welcome-msg">
-                <h1><span>CRUD</span> Operations</h1>
-                <h2>With</h2>
-                <h1><span>MongoDB</span> and <span>Node.JS</span></h1>
-                <Link className="link">Let's Start</Link>
+                <Link className="link">Start</Link>
             </div>
 
         </div>
