@@ -38,4 +38,11 @@
     
     - Render API
 
-    - Link: 
+    - Link: https://crud-operations-in-mongodb-with-nodejs.onrender.com 
+    - Routes: 
+    - /get-all-users/
+    - /get-a-user/:id
+    - /create-a-user/;
+    - /update-a-user/:id
+    - /delete-a-user/:id
+    
