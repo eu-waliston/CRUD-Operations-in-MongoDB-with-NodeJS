@@ -20,6 +20,6 @@ API.use("/", UserRouter);
 require("../config/db_connection");
 
 //server
-API.listen(process.env.PORT, () => {
-    console.log(`App listening on PORT ${process.env.PORT}`);
+API.listen(1337, () => {
+    console.log(`App listening on PORT ${1337}`);
   });
