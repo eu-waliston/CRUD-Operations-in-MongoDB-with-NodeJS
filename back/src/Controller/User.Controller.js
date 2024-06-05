@@ -21,7 +21,7 @@ async function GetUser(req, res) {
   }
 }
 
-async function CreateUser(req, ree) {
+async function CreateUser(req, res) {
   const newuser = new USER({
     Name: req.body.Name,
     Nationallity: req.body.Nationallity,
@@ -42,10 +42,10 @@ async function CreateUser(req, ree) {
 
 async function UpdateUser(req, res) {
   try {
-    let userupdate = await USER.upateOne(
+    let userupdate = await USER.updateOne(
       { _id: req.params.id },
       {
-        $setr: {
+        $set: {
           Name: req.body.Name,
           Nationallity: req.body.Nationallity,
           Personality: req.body.Personality,

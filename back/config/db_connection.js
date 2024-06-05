@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 require("dotenv").config();
 
 //Set up default mongoose connection
-var mongoDB = process.env.DB_URL;
+var mongoDB = process.env.DB_URL_DEV;
 mongoose.connect(mongoDB, { useNewUrlParser: true });
 
 //Get the default connection
