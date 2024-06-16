@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <div className="home--page">
             <div className="welcome-msg">
-                <Link className="link">Start</Link>
+                <Link className="link" to={"/crud-operatrions/dashboard"}>Start</Link>
             </div>
 
         </div>
