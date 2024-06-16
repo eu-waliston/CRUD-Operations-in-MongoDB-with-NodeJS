@@ -8,7 +8,7 @@ import { HiUser } from "react-icons/hi2";
 import { BsPersonDashFill } from "react-icons/bs";
 import { FaUserPen } from "react-icons/fa6";
 const Menu = () => {
-  const [nav, setNav] = React.useState(false);
+  const [nav, setNav] = React.useState(true);
 
   const handleClick = () => {
     setNav(!nav);
