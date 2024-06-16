@@ -36,7 +36,7 @@ const Menu = () => {
           Create Character
         </Link>
         <Link className="item-menu-icon">
-          <BsPersonDashFill className="icon" />
+          <BsPersonDashFill className="icon fs" />
           Delete Character
         </Link>
       </div>
