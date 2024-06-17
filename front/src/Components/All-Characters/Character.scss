@@ -1,0 +1,33 @@
+@import "../../Utils/Variables.scss";
+
+.title_name {
+    font-family: $font-webiste;
+    font-size: 20px;
+    position: relative;
+    left: 13%;
+}
+
+.characters_photo_style {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.characters_photo_style_box {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    position: relative;
+    left: 25%;
+}
+
+#modal-modal-title {
+    h1 {
+        text-align: center;
+    }
+}
+
+.names {
+    text-align: center;
+}

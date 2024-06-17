@@ -1,13 +1,21 @@
 @import "../../Utils/Variables.scss";
 
 .AllCharacters {
-    background-color: rgba(240, 248, 255, 0.158);
     width: 70%;
     height: 80vh;
     position: relative;
-    top: 0;
     z-index: 1;
-    margin: 0 auto;
-    top: 10%;
     border-radius: 30px;
+    top: 15%;
+    margin-left: 20%;
+
+    .allcharacters--grid {
+        display: grid;
+        grid-template-columns: repeat(4, 300px);
+        gap: 20px;
+
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+    }
 }

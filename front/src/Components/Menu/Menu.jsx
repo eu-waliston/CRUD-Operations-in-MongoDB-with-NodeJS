@@ -16,7 +16,7 @@ const Menu = () => {
   return (
     <div className={nav ? "menu--toggled" : "menu"}>
       <i
-        class={`bi ${
+        className={`bi ${
           nav ? "bi-arrow-right-circle-fill" : "bi-arrow-left-circle-fill"
         }`}
         onClick={() => handleClick()}
