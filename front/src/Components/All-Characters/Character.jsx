@@ -59,7 +59,7 @@ const Character = (props) => {
               Habilities: {props.Habilities[0]} &nbsp; {props.Habilities[1]}{" "}
               &nbsp; {props.Habilities[2]}
             </h4>
-            <h4>
+            <h4 className="personality">
               Personality: {props.Personality[0]} &nbsp; {props.Personality[1]}{" "}
               &nbsp; {props.Personality[2]} &nbsp; {props.Personality[3]}
             </h4>
