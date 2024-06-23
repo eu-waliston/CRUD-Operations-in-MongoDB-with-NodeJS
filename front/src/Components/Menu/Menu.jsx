@@ -7,6 +7,7 @@ import { BsPersonPlusFill } from "react-icons/bs";
 import { HiUser } from "react-icons/hi2";
 import { BsPersonDashFill } from "react-icons/bs";
 import { FaUserPen } from "react-icons/fa6";
+
 const Menu = () => {
   const [nav, setNav] = React.useState(true);
 
@@ -23,7 +24,7 @@ const Menu = () => {
       ></i>
       <img src={BG} alt="background" className="BG" />
       <div className="menu--itens">
-        <Link className="item-menu-icon">
+        <Link className="item-menu-icon" to={"/crud-operatrions/dashboard"}>
           <HiUser className="icon" />
           All Characters
         </Link>
