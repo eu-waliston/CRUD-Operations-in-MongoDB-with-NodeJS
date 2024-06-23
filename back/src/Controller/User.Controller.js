@@ -21,6 +21,16 @@ async function GetUser(req, res) {
   }
 }
 
+async function GetUserByName(req,res) {
+  let userByName = req.body.Name;
+  try {
+    const user = await User.findOne(userByName)
+    res.status(200).json(user)
+  } catch (error) {
+    res.status(500).send({message: error})
+  }
+}
+
 async function CreateUser(req, res) {
   const newuser = new USER({
     Name: req.body.Name,
@@ -76,6 +86,7 @@ async function DeleteUser(req, res) {
 module.exports = {
   GetAllUsers,
   GetUser,
+  GetUserByName,
   CreateUser,
   UpdateUser,
   DeleteUser,
