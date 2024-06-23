@@ -21,16 +21,19 @@ async function GetUser(req, res) {
   }
 }
 
-// async function GetUserByName(req,res) {
-//   try {
-//     let username = req.body.Name
-//     const user = await USER.findOne(username);
-
-//     res.status(200).json(user) 
-//   } catch (error) {
-//     res.status(500).send({message: `User not found ${error}`})
-//   }
-// }
+async function GetUserByName(req,res, name) {
+  try {
+    //find a single user by name
+    const user = await USER.findOne({Name: name})
+    if(user) {
+      res.status(200).json(user)
+    } else {
+      res.status(500).json("User not found")
+    }
+  } catch (error) {
+    res.status(500).send(error)
+  }
+}
 
 async function CreateUser(req, res) {
   const newuser = new USER({
@@ -87,7 +90,7 @@ async function DeleteUser(req, res) {
 module.exports = {
   GetAllUsers,
   GetUser,
-  // GetUserByName,
+  GetUserByName,
   CreateUser,
   UpdateUser,
   DeleteUser,
