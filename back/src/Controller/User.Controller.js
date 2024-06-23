@@ -24,7 +24,7 @@ async function GetUser(req, res) {
 async function GetUserByName(req,res, username) {
   let username = req.body.Name;
   try {
-    const user = await User.findOne(username)
+    const user = await USER.findOne(username)
     res.status(200).json(user)
   } catch (error) {
     res.status(500).send({message: error})
