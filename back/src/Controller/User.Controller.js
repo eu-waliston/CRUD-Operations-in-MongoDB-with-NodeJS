@@ -21,19 +21,16 @@ async function GetUser(req, res) {
   }
 }
 
-async function GetUserByName(req, res, username) {
-  try {
-    const nameFormated = username.replace(/\s+/g, '').trim()
-    const regexName = new RegExp(`^${nameFormated}$`, 'i');
+// async function GetUserByName(req,res) {
+//   try {
+//     let username = req.body.Name
+//     const user = await USER.findOne(username);
 
-
-    const usuario = await USER.findOne({ Name: regexName });
-    return res.status(200).json(usuario);
-  } catch (error) {
-    console.error("Erro ao buscar usuário por nome:", error);
-    throw error;
-  }
-}
+//     res.status(200).json(user) 
+//   } catch (error) {
+//     res.status(500).send({message: `User not found ${error}`})
+//   }
+// }
 
 async function CreateUser(req, res) {
   const newuser = new USER({
@@ -90,7 +87,7 @@ async function DeleteUser(req, res) {
 module.exports = {
   GetAllUsers,
   GetUser,
-  GetUserByName,
+  // GetUserByName,
   CreateUser,
   UpdateUser,
   DeleteUser,

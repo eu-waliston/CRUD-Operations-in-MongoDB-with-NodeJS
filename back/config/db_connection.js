@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 require("dotenv").config();
 
 //Set up default mongoose connection
-let con = "mongodb://127.0.0.1:27017/"
+let dev = "mongodb://127.0.0.1:27017/"
 let prod = "mongodb+srv://we:4002892233513341@cluster0.sdsh59o.mongodb.net/"
 var mongoDB = prod;
 mongoose.connect(mongoDB, { useNewUrlParser: true });
